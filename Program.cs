@@ -43,17 +43,15 @@ namespace Lab3FrajeTest2Console
             {
                 if (commandLine[0] == "-new")
                 {
-                    var listName = commandLine[1];
-                    var languageOne = commandLine[2];
-                    var languageTwo = commandLine[3];
+                    var listName = "Testlista";
+                    var languageOne = "Svenska";
+                    var languageTwo = "Engelska";
                     var wordList = createWordList(listName, languageOne, languageTwo);
-                    WordLists.Add(wordList);
-                    //Console.WriteLine($"Created list: {listName}");
-                    Console.Clear();
+                    WordLists.Add(wordList);                    
                 }
                 if (commandLine[0] == "-add")
                 {
-                    var listName = commandLine[1];
+                    var listName = "Testlista";
                     var wordList = WordLists.Find(wordList => wordList.Name == listName);
                     if (wordList != null)
                     {
